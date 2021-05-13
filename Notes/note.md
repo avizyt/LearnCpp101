@@ -46,7 +46,7 @@
     e.g float = a = 0.3F;
         double b = 0.2;
         long double c = 0.3L;
-        double plancks_constant = 6.62607004e-34; 
+        double plancks_constant = 6.62607004e-34;
 
 **Note**
 
@@ -78,7 +78,7 @@ output:
 18446744073709551615
 
 #### **Format Specifiers**
-    
+
     - %f display float with decimal digits, %e display same in scientific notation.
     - You can let printf decide by using %g.
     - for double, simply prepend an l.
@@ -87,31 +87,3 @@ output:
         - for double  %lf, %le or %lg;
         - for long double %Lf, %Le, or %Lg;
         - to test run format_specifier.cpp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
