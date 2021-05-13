@@ -1,0 +1,14 @@
+{
+    "configurations": {
+        "Launch": {
+            "adapter": "vscode-cpptools",
+            "configuration": {
+                "request": "launch",
+                "program": "${fileBasenameNoExtension}",
+                "cwd": "~/Documents/gitrepos/LearnCpp101",
+                "extranalConsole": true,
+                "MIMode": "gdb"
+            }
+        }
+    }
+}

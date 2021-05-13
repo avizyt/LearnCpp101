@@ -7,7 +7,8 @@
 1. Individual characters of a string can be accessed through a subscript operator [] or via a
    member function .at(index). The index starts at 0.
 
-2. Preffered way to of accepting string from the standard input is via the _std::getline_ function which takes _std::cin_ and string as parameters.
+2. Preffered way to of accepting string from the standard input is via the
+_std::getline_ function which takes _std::cin_ and string as parameters.
 
     > Use the _std::getline_ because our string can contain white spaces. And if we
     > used the _std::cin_ function alone, it would accept only a part of the string.
@@ -28,7 +29,7 @@
 | long long          | Yes    | 8     | 8       | %lld          |
 | unsigned long long | No     | 8     | 8       | %llu          |
 
--   A literal is hardcoded value in a program.There are four integer literal.
+    - A literal is hardcoded value in a program.There are four integer literal.
 
 | Name        | prefix  |
 | ----------- | ------- |
@@ -54,7 +55,7 @@ Integer literals can contain any number of single quotes (') for readability.
 These are completely ignored by the compiler. For example, 1000000 and 1'000'000
 are both integer literals equal to one million.
 
--   write below code to see.
+- write below code to see.
 
 ```cpp
 #include <cstdio>
@@ -87,3 +88,86 @@ output:
         - for double  %lf, %le or %lg;
         - for long double %Lf, %Le, or %Lg;
         - to test run format_specifier.cpp
+        -
+
+## Class and its characters
+
+**Class** is prototype of objects. An objects is an instance of a class.
+e.g Human is a class of a living beign and a person name avijit(me) is an **instance** of human class.
+
+Obejct - is an entity with state and behavior.
+    - They have state in the form of a memeber variables called **fields**.
+    - They expose behaviour in the form of a member function called **methode**
+
+        What is **encapsulation** is layman way?
+Hiding internal detail(state) of the object and allowing all the action to be 
+performed over the objects using methods is known as **data-encapsulation**.
+
+### Important concepts(class)
+
+1. Passing Parameter
+Arguments can be passed from one methode to other using parameters.
+    1. **Call by value**
+        By default all,the variables, which are passed as parameters, are passed
+        by parameters. that means a separate copy is created inside the called
+        method and no changes done inside called method will reflect in calling
+        method.
+    2. **Call by reference**
+        If you need to change value of the parameters inside the method, than you
+        should us call by refence. C++ by defalut passes by value.Therefore. to 
+        make it happen, you need to pass by reference by using "&" operator.
+        The variable inside the called function also refer to the same variable
+        inside the calling function. When the value of reference variable is
+        changed then the original variable value also change. 
+        see incrementPassByre.cpp
+    3. **Call by Pointer**
+        When we pass address of variable inside calling function to the called
+        function then the change done inside called function is also reflected
+        inside calling function. see incrementPassByPointer.cpp
+2. Kind of Variables
+    1. **Instance Variables(Non-Static)**
+        They are instance variable so they are unique to each instance.
+    2. **Class Variables(Static)**
+        A class variable is any fields with the _static_ modifier.these variable
+        are linked with the class not with the odject of the class.There is    
+        exactly one copy of the variables regardless of how many instance of   
+        the class are created.
+    3. **Local variable**
+        The temporary variables in a method ar called local variable. the local
+        variables are only visisble to the methode in which they are declared. 
+        The parameters that are passed to the methods are also local variable
+        of the called method. see kindOfVar.cpp 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
